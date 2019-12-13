@@ -1,0 +1,14 @@
+kind: LocalConfig
+apiversion: odo.openshift.io/v1alpha1
+ComponentSettings:
+  Type: nodejs:10
+  SourceLocation: ./
+  SourceType: local
+  Ports:
+  - 8080/TCP
+  Application: vsc-test
+  Project: franks-project
+  Name: vsc-test
+  Url:
+  - Name: url123
+    Port: 8080
